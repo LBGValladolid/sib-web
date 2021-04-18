@@ -1,0 +1,57 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendario');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'es',
+            initialView: 'timeGridWeek',
+            initialDate:'2021-04-30',
+            slotMinTime: '10:00:00',
+            slotMaxTime: '19:30:00',
+            slotDuration: '01:00:00',
+            allDaySlot: false,
+            firstDay: 5,
+            height: 320,
+            eventColor: '#501c82',
+            hiddenDays: [ 2, 3, 4 ],
+            headerToolbar: {
+                start: '', // will normally be on the left. if RTL, will be on the right
+                center: 'title',
+                end: '' // will normally be on the right. if RTL, will be on the left
+            },
+            events:[
+                {
+                    title: 'Sesión 1: Prácticas en empresa y relaciones sociales durante la pandemia', 
+                    start: '2021-04-30T16:00:00',
+                    end: '2021-04-30T19:00:00'
+                },
+                {
+                    title: 'Sesión 2: Docencia presencial vs docencia online', 
+                    start: '2021-05-01T11:00:00',
+                    end: '2021-05-01T14:00:00'
+                },
+                {
+                    title: 'Sesión 3: Métodos de evaluación', 
+                    start: '2021-05-02T11:00:00',
+                    end: '2021-05-02T14:00:00'
+                },
+                {
+                    title: 'Sesión 4: Everis: Presentación y dinámica de grupo', 
+                    start: '2021-05-03T11:00:00',
+                    end: '2021-05-03T13:00:00'
+                }
+            ]
+        });
+        calendar.render();
+      });
+</script>
+
+<section id="calendar">
+    <div id='calendario'></div>
+    <br>
+    <ul>
+        <li><b>Sesión 1: </b>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae</li>
+        <li><b>Sesión 2: </b>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae</li>
+        <li><b>Sesión 3: </b>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae</li>
+        <li><b>Sesión 4: </b>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae</li>
+    </ul>
+</section>

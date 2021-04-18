@@ -1,0 +1,32 @@
+title: SiB 2021
+description: > # this means to ignore newlines until "baseurl:"
+  Semana del Ingenio BEST Valladolid
+baseurl: "sib21" # the subpath of your site, e.g. /blog
+url: "bestvalladolid.org" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
+
+facebook:
+  app_id: 
+
+logo: "../css/2021_style/img/sib21-logo.png"
+
+# google_site_verification: googleXXXXXXXXXXXXXXXX.html
+
+include: ['_2021_pages', '_2022_pages']
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: https://www.instagram.com/best_valladolid
+  - title: twitter
+    url: https://twitter.com/BESTValladolid
+  - title: facebook
+    url: https://www.facebook.com/lbg.valladolid
+# Build settings
+markdown: kramdown
+permalink: pretty

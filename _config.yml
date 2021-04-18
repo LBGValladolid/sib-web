@@ -1,7 +1,7 @@
 title: SiB 2021
 description: > # this means to ignore newlines until "baseurl:"
   Semana del Ingenio BEST Valladolid
-baseurl: "sib21" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "bestvalladolid.org" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown

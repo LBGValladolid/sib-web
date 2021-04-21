@@ -107,7 +107,7 @@ aside.clients {
 
 aside.clients,
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: white;
 }
 
 .bg-darkest-gray {
@@ -430,9 +430,13 @@ section {
     background-image: url('/css/2021_style/img/train.jpg');
     color: white;
 }
+#best-valladolid img{
+    padding: 50px;
+}  
 @media only screen and (max-width:600px) {
     #best-valladolid img{
         width: 100%;
+        padding: 10px;
     }    
 }
 
@@ -723,7 +727,8 @@ section {
 }
 
 aside.clients img {
-    margin: 50px auto;
+    margin: 0px auto;
+    padding: 50px;
 }
 
 section#contact {
@@ -793,10 +798,14 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+section#contact a {
+    color:grey
+}
+
 footer {
     padding: 25px 0;
     text-align: center;
-    color: white;
+    color: #{{ site.data.template.color.secondary }};
     background-color: #{{ site.data.template.color.secondary }};
     position: absolute;
     right: 0;
@@ -808,6 +817,7 @@ footer span.copyright {
     text-transform: none;
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
+    color:white;
 }
 
 footer ul.quicklinks {
